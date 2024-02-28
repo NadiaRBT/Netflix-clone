@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETFLIX-CLONE</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"> 
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 </head>
 <body>
     <div class="banner-wrap">  
-
+     <div class="overlay"></div>
         <div class="navbar">
             <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
@@ -25,41 +27,65 @@
         </div>
 
          <div class="banner-container">
-             <h1>Unlimited movies, TV Shows, and more.</h1>
-             <h2>Watch anywhere. Cancel anytime.</h2>
+             <h1 class="card-title">Unlimited movies, TV Shows, and more.</h1>
+             <h2 class="card-subtitle">Watch anywhere. Cancel anytime.</h2>
              <form>
-                 <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                 <input type="text">
-                 <button>GET STARTED</button>
+                 <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+                 <div class="get-started-form">
+                     <input type="text" placeholder="Email address">
+                     <button type="button">Get started ></button>
+                 </div>
              </form>
          </div>
     </div>
     <div class="info-container">
-        <h1>Enjoy on your TV</h1>
-        <p>Watch on Start TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-        <video autoplay playsinline muted loop>
-            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
-        </video>
+        <div class="info">
+            <h1 class="card-title">Enjoy on your TV</h1>
+        <p class="card-subtitle-paragraph">Watch on Start TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        
+        <div class="tv-container">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video autoplay playsinline muted loop>
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+            </video>
+        </div>
     </div>
 
     <div class="footer">
-        <ul>
-            <li>FAQ</li>
-            <li>Help Centre</li>
-            <li>Account</li>
-            <li>Media Centre</li>
-            <li>Investor Relations</li>
-            <li>Jobs</li>
-            <li>Ways to Watch</li>
-            <li>Terms of Use</li>
-            <li>Privacy</li>
-            <li>Cookie Preferences</li>
-            <li>Corporate Information</li>
-            <li>Contact Us</li>
-            <li>Speed Test</li>
-            <li>Legal Notices</li>
-            <li>Only on Netflix</li>
-        </ul> 
+        <div class="footer-items">
+            <div class="footer-top">
+                Questions? Call
+                <a href="#" class="Questions-title">+27 800 990 334</a>
+            </div>
+            <ul class="footer-links">
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Ways to Watch</li>
+                <li>Corporate Information</li>
+                <li>Only on Netflix</li>
+                <li>Help Center</li>
+                <li>Jobs</li>
+                <li>Terms of Use</li>
+                <li>Contact Us</li>
+                <li>Account</li>
+                <li>Redeem Gift Cards</li>
+                <li>Privacy</li>
+                <li>Speed Test</li>
+                <li>Media Center</li>
+                <li>Buy Gift Cards</li>
+                <li>Cookie Preferences</li>
+                <li>Legal Notices</li>
+            </ul> 
+            <div class="language">
+
+                <i class="material-icons">language</i>
+                    <select name="language" id="language">
+                        <option value="English">English</option>
+                    </select>
+                
+            </div>
+        </div>
     </div>
 </body>
 </html>
